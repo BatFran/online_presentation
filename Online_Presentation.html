@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vowel-length contrasts and phonetic cues to stress: an investigation of their relation</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Francisco Orejarena" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Vowel-length contrasts and phonetic cues to stress: an investigation of their relation
+## paper by Anya Lunden, Jessica Campbell, Mark Hutchens, and Nick Kalivoda
+### Francisco Orejarena
+### 2018/04/10
+
+---
+
+
+
+
+
+---
+
+#Can vowel length entail suprasegmental structure and stress simutaneously?
+
+##Questioning the Functional Load Hypothesis
+
+[Link](https://doi.org/10.1017/S0952675717000288) to paper.
+
+---
+
+#Introduction and Background
+
+--
+
+One of the supposedly most quoted theories in suprasegmental phonology is the Functional Load Hypothesis (FLH). The FLH essentially states that a language which uses vowel length as a contrastive phonological feature is unable to use it as an indicator of stress. 
+
+--
+
+Lunden asserts that, while the theory may have some credence, it is insignificant without any data, specifcally saying that enough data is assessing any language that is logged, to validify it.
+
+---
+
+#Purpose of Choosing This Paper
+
+--
+
+While most of this is procrastination related, I think this is an important article to discuss and dissect, especially considering that it tackles and scrutinizes a well known theory (FLH). This is not done nearly enough in linguistics, especially in phonology, where many theories, either SPE, OT, or anything else, conflict.
+
+--
+
+This eventually creates the problem of lack of responsibility, where someone may propose something, and it will not be challenged, and could become an often quoted piece of work. This is me imlicated one work specifically: Echeverría and Contreras (1965).
+
+--
+
+Th seminal work on the Mapudugan language (then offensively termed 'Arucanian'), stated that, " a phonological word has a main stress on the second syllable and, if
+applicable, secondary stresses on the fourth and sixth syllables" (Echeverría and Contreras, 1965). de Lacy (2012), that using modern frameworks, it is clear that Mapudungun cannot be considered a stressed language, challenging 50 years of assumed systems.
+
+--
+
+For this same purpose, the work of Lunden and her peers are crucial in furthering phonological theory, and serve as a crux of what this presentation seeks to accomplish.
+
+---
+
+#Analysis
+
+--
+
+The great thing about this paper is that Lunden was extremely thorough. Luden sorted her data into [this](https://static.cambridge.org/resource/id/urn:cambridge.org:id:binary:20171220074159713-0430:S0952675717000288:S0952675717000288sup002.xlsx) excel document, from a database created by the University of Delaware, called the Stress Correlate Database.
+
+---
+
+#Database Parameters
+
+--
+
+First, 140 languages were taken from the database, with all of their information. The information was broken down as follows:
+
+a. Language information
+
+Language name
+
+Primary family
+
+Secondary family
+
+ISO 639-3 code
+
+b. Stress system information
+
+Stress system type
+
+(single stress, binary stress, dual stress, ternary stress)
+
+Primary stress edge (left/right)
+
+---
+
+#Database Parameters
+
+c. Stress correlate information
+
+Duration as reported correlate (yes/no)
+
+Pitch as reported correlate (yes/no)
+
+Intensity/loudness/energy/spectral tilt as reported correlate (yes/no)
+
+Primary correlate, if known
+
+Vowel reduction (phonological) in unstressed syllables (yes/no)
+
+d. Phonological uses of suprasegmentals
+
+Duration used contrastively outside of stress (yes/no)
+
+Pitch used contrastively outside of stress (yes/no)
+
+e. References
+Sources consulted (full bibliographical entries are given below)
+
+---
+
+##Reasoning
+
+This was done so that the languages would be recorded as thoroughly, to compart the data into percentages, but also so that the variety of phonological systems, specifically the stress systems, enabling easily fascilitated findings, like whether or not stress was affected by vowel length in a length-contrastive language.
+
+--
+
+Lunden broke then broke the data up into percentages based on language families, asserting that "from the assumption that languages within a family are more likely to resemble each other in their realisation of stress than a randomly selected subgroup from the database".
+
+---
+
+#Validity of Analysis
+
+##Z-Scores
+
+The setup of the data and its organization and origin is very well done and handled. In fact, I tried tidying the data and fooling around with it a bit more, but I need ot try and clean up the excel document a bit more. However, the analysis itself is very poor. It starts out discussing z-scores for parameters, saying "Each value (from each of the three parameters in each of the seven language families) was calculated as a z-score (based on distributional curves for each language-family size)", but within the data set, Lunden effectively creates binary variables, but only providing one z-score, not three separate ones for each phonological process. So, not only does she explain the difference between this z-score amongst the language families and their three factors, she gives a standard deviation of the contrasting averaged z-score. 
+
+Maybe I am still a little too new with this, but the reasoning for how she approaches z-scores and her explanation leaves too much room for intepretation from someone like me who is already trying to thoroughly read this paper repeatedly, only to realize the z-scores didn't make much sense.
+
+---
+
+#Model Comparisons
+
+The nested model comparisons don't show up here, as there are not much more statistics after the z-score section, but she does do comparisons across stress and other phonological markers using tables. This probably could have been handled in R, properly establishing basic transformations followed by the nested model comparisons for shorter work, but regardless, she does get her point across: There are languages that contradict FLH. 
+
+---
+
+#Overall, the analysis is unusual. It seems random, scattered, but eventually guided by the interesting tables that she provides to drive her point.
+
+---
+
+#Unfamiliar Things
+
+One thing that stood out to me that I was not aware of was Monte Carlo simulations. Judging by my quick Google search, Monte Carlo simulations are testing different outcomes based on the input of random variables. It seems to be more useful in macroeconomic calculations, and while the data that they had was large and lingusitically diverse, the lack of explanation to how the simulation worked seems to be a drop of a buzz word.
+
+---
+
+#Presentation of Results
+
+The results are similar to what I said prior: mostly affected by the tables provided in section three. No graphs were provided, and while there were tables, they weren't terribly intuitive. They relied mostly on verbal explanation, rather than immediate understanding which is important for scientific papers. While proofs and verbose explanations are commonplace, justifying the conclusions with simple and intuitive tables should not prove to be so difficult.
+
+So, while she did explain her results and findings appropriately, almost none of the data felt comfortable being there. The whole of it could be summed up in 5 outlier occurances of what was being sought after: vowel-length stressed in length-contrastive languages.
+
+---
+
+#What I Liked
+
+I really think that the organization of the data was promising, as well as the premise of its sorting. I think that if the data was properly handled and coded nicely, it would've been a phenomenally strong paper, with well purposed percentages on outlying langauges within the Functional Load Hypothesis framework. I think that section 3 also provides interesting tables that are reminiscent of nested-model comparisons. This elements are fun to see come together in a paper, and were actually very exciting to obtain and attempt to process. This paper also pushes the limits of question key phonological framework, which is crucial to progress suprasegmental understanding.
+
+---
+
+#Thanks! I hope I don't seem like a chump after you having read this. I loved this data, hopefully you can check it out!
+
+---
+
+##References
+
+de Lacy, P. (2014). Evaluating evidence for stress systems. Word stress: Theoretical and typological issues, 149-193.
+
+Echeverría, M. S. and Contreras, H. 1965. Araucanian Phonemics. International Journal of American Linguistics 31. 132-135.
+
+
+Lunden, A., Campbell, J., Hutchens, M., &amp; Kalivoda, N. (2017). Vowel-length contrasts and phonetic cues to stress: an investigation of their relation. Phonology, 34(3), 565-580.
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
